@@ -517,3 +517,15 @@ html, body {
           grid-template-columns: repeat(1, 1fr);
       }    
     }  
+.pdf{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background: rgb(235, 250, 248);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
