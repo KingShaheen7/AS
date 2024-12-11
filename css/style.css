@@ -467,14 +467,15 @@ html, body {
   width: 100%;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 
   .cardBox .card {
       position: relative;
-      background: var(--white);
+      background: rgb(235, 250, 248);
       padding: 30px;
+      width: 100%;
       border-radius: 20px;
       display: flex;
       justify-content: space-between;
@@ -486,6 +487,7 @@ html, body {
           position: relative;
           font-weight: 500;
           font-size: 1.3rem;
+          width: 100%;
           color: var(--blue);
       }
 
@@ -493,12 +495,9 @@ html, body {
           color: var(--black2);
           font-size: 1.1rem;
           margin-top: 5px;
+          width: 100%;
       }        
-
-.cardBox .card .iconBx {
-          font-size: 3.5rem;
-          color: var(--black2);
-      }        
+       
 
 .cardBox .card:hover {
           background: var(--blue);
@@ -512,3 +511,9 @@ html, body {
 .container-xxl ul li{
   font-size: 25px;
 }
+
+@media (max-width: 1000px) {
+  .cardBox {
+          grid-template-columns: repeat(1, 1fr);
+      }    
+    }  
